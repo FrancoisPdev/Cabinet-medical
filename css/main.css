@@ -262,21 +262,19 @@ textarea {
 }
 /* =========================================================
    urgence.html
-   ========================================================= */
-	.urgence, blockquote, .urgetop p, .urgebottom p{
+   ========================================================= */	
+	.urgence, blockquote, .urgetop p,{
+
 	background-color:hsl(15, 100%, 50%);
 	color:#ffffff;	
 }
 	.urgetop{
-	padding-left:1rem;
-	margin-top:1rem;
-}
-	.urgebottom{
-	margin:auto;
-	padding-left:2rem;
+	grid-column:2;
+	grid-row: 1;
 }
 	blockquote{
-	margin-bottom:1rem;
+	grid-column: 1;
+	grid-row: 1 / 2;
 }
 /* ========================================================= 
    Contact.html
@@ -454,22 +452,19 @@ textarea {
 }
 /* =========================================================
    urgence.html
-   ========================================================= */
-	.urgence, blockquote, .urgetop p, .urgebottom p{
+   ========================================================= */	
+	.urgence, blockquote, .urgetop p,{
 
 	background-color:hsl(15, 100%, 50%);
 	color:#ffffff;	
 }
 	.urgetop{
-	padding-left:1rem;
-	margin-top:1rem;
-}
-	.urgebottom{
-	margin:auto;
-	padding-left:2.3rem;
+	grid-column:2;
+	grid-row: 1;
 }
 	blockquote{
-	margin-bottom:1rem;
+	grid-column: 1;
+	grid-row: 1 / 2;
 }
 /* ========================================================= 
    Contact.html
@@ -644,22 +639,19 @@ textarea {
 }
 /* =========================================================
    urgence.html
-   ========================================================= */
-	.urgence, blockquote, .urgetop p, .urgebottom p{
+   ========================================================= */	
+	.urgence, blockquote, .urgetop p,{
 
 	background-color:hsl(15, 100%, 50%);
 	color:#ffffff;	
 }
 	.urgetop{
-	padding-left:1rem;
-	margin-top:1rem;
-}
-	.urgebottom{
-	margin:auto;
-	padding-left:5rem;
+	grid-column:2;
+	grid-row: 1;
 }
 	blockquote{
-	margin-bottom:1rem;
+	grid-column: 1;
+	grid-row: 1 / 2;
 }
 /* =========================================================
    Contact.html
@@ -835,22 +827,19 @@ textarea {
 }
 /* =========================================================
    urgence.html
-   ========================================================= */
-	.urgence, blockquote, .urgetop p, .urgebottom p{
+   ========================================================= */	
+	.urgence, blockquote, .urgetop p,{
 
 	background-color:hsl(15, 100%, 50%);
 	color:#ffffff;	
 }
 	.urgetop{
-	padding-left:1rem;
-	margin-top:1rem;
-}2
-	.urgebottom{
-	margin:auto;
-	padding-left:5rem;
+	grid-column:2;
+	grid-row: 1;
 }
 	blockquote{
-	margin-bottom:1rem;
+	grid-column: 1;
+	grid-row: 1 / 2;
 }
 /* ========================================================= 
    Contact.html
@@ -1028,22 +1017,19 @@ textarea {
 }
 /* =========================================================
    urgence.html
-   ========================================================= */
-	.urgence, blockquote, .urgetop p, .urgebottom p{
+   ========================================================= */	
+	.urgence, blockquote, .urgetop p,{
 
 	background-color:hsl(15, 100%, 50%);
 	color:#ffffff;	
 }
 	.urgetop{
-	padding-left:1rem;
-	margin-top:1rem;
-}
-	.urgebottom{
-	margin:auto;
-	padding-left:5rem;
+	grid-column:2;
+	grid-row: 1;
 }
 	blockquote{
-	margin-bottom:1rem;
+	grid-column: 1;
+	grid-row: 1 / 2;
 }
 /* ================================================================= 
    Contact.html
