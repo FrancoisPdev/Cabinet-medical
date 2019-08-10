@@ -1079,7 +1079,7 @@ height:100%;
 * {box-sizing: border-box;}
 	.wrapper {
   max-width: 117.5rem;
-  margin:auto;
+  margin:1.5rem;
 }
 
 	.wrapper > div {
@@ -1177,4 +1177,3 @@ height:100%;
     page-break-after: avoid;
   }
 }
-
