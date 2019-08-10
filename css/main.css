@@ -263,11 +263,12 @@ textarea {
 /* =========================================================
    urgence.html
    ========================================================= */	
-	.urgence, blockquote, .urgetop p,{
+	.urgence, blockquote, .urgetop{
 
 	background-color:hsl(15, 100%, 50%);
-	color:#ffffff;	
+		
 }
+	blockquote, .urgence p{color:#ffffff;}
 	.urgetop{
 	grid-column:2;
 	grid-row: 1;
@@ -453,11 +454,12 @@ textarea {
 /* =========================================================
    urgence.html
    ========================================================= */	
-	.urgence, blockquote, .urgetop p,{
+	.urgence, blockquote, .urgetop{
 
 	background-color:hsl(15, 100%, 50%);
-	color:#ffffff;	
+		
 }
+	blockquote, .urgence p{color:#ffffff;}
 	.urgetop{
 	grid-column:2;
 	grid-row: 1;
@@ -640,11 +642,12 @@ textarea {
 /* =========================================================
    urgence.html
    ========================================================= */	
-	.urgence, blockquote, .urgetop p,{
+	.urgence, blockquote, .urgetop{
 
 	background-color:hsl(15, 100%, 50%);
-	color:#ffffff;	
+		
 }
+	blockquote, .urgence p{color:#ffffff;}
 	.urgetop{
 	grid-column:2;
 	grid-row: 1;
@@ -828,11 +831,12 @@ textarea {
 /* =========================================================
    urgence.html
    ========================================================= */	
-	.urgence, blockquote, .urgetop p,{
+	.urgence, blockquote, .urgetop{
 
 	background-color:hsl(15, 100%, 50%);
-	color:#ffffff;	
+		
 }
+	blockquote, .urgence p{color:#ffffff;}
 	.urgetop{
 	grid-column:2;
 	grid-row: 1;
@@ -1018,11 +1022,12 @@ textarea {
 /* =========================================================
    urgence.html
    ========================================================= */	
-	.urgence, blockquote, .urgetop p,{
+	.urgence, blockquote, .urgetop{
 
 	background-color:hsl(15, 100%, 50%);
-	color:#ffffff;	
+		
 }
+	blockquote, .urgence p{color:#ffffff;}
 	.urgetop{
 	grid-column:2;
 	grid-row: 1;
