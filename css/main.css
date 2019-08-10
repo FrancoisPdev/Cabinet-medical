@@ -809,7 +809,7 @@ height:100%;
 .urgetop{
 	padding-left:1rem;
 	margin-top:1rem;
-}
+}2
 .urgebottom{
 	margin:auto;
 	padding-left:5rem;
@@ -820,6 +820,16 @@ blockquote{
 /* ========================================================= 
    Contact.html
    ========================================================= */
+.contactleft {
+  grid-column:2;
+  grid-row:1/4;
+}
+.contactright {
+  grid-column:1/1;
+  grid-row:1/4;
+}
+
+
 form {
   /* Pour le centrer dans la page */
 
@@ -832,7 +842,6 @@ form {
 div + div {
   margin-top:.1em;
 }
-
 label {
   /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
   display: inline-block;
@@ -889,10 +898,9 @@ button {
 position: ;
 top: 0;
 left: 0;
-width:100%;
-height:100%;
+width:auto;
+height:auto;
 }
-
 
 * {box-sizing: border-box;}
 	.wrapper {
@@ -1177,3 +1185,4 @@ height:100%;
     page-break-after: avoid;
   }
 }
+
