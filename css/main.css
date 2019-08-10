@@ -234,14 +234,15 @@ textarea {
 	list-style-type:none;
 }
 /* =================================================================
-   About
+   about.html
    =============================================================== */
 	.about{
-	margin:auto;
-	padding:auto;
-	display:block;
+	grid-column:2;
+	grid-row: 1;
 	background-color:hsl(178, 68%, 46%);
 }
+	.about h1{display:none}
+	.about p{margin-left:1rem;}
 /* =========================================================
    hours.html
    ========================================================= */
@@ -424,14 +425,15 @@ textarea {
 	list-style-type:none;
 }
 /* =================================================================
-   About
+   about.html
    =============================================================== */
 	.about{
-	margin:auto;
-	padding:auto;
-	display:block;
+	grid-column:2;
+	grid-row: 1;
 	background-color:hsl(178, 68%, 46%);
 }
+	.about h1{display:none}
+	.about p{margin-left:1rem;}
 /* =========================================================
    hours.html
    ========================================================= */
@@ -612,18 +614,16 @@ textarea {
 	li {
 	list-style-type:none;
 }
-
 /* =================================================================
-   About
+   about.html
    =============================================================== */
 	.about{
-	margin:auto;
-	padding:auto;
-	width:15rem;
-	display:block;
+	grid-column:2;
+	grid-row: 1;
 	background-color:hsl(178, 68%, 46%);
 }
-
+	.about h1{display:none}
+	.about p{margin-left:1rem;}
 /* =========================================================
    hours.html
    ========================================================= */
@@ -806,15 +806,15 @@ textarea {
 	list-style-type:none;
 }
 /* =================================================================
-   About
+   about.html
    =============================================================== */
 	.about{
-	margin:auto;
-	padding:auto;
-	width:20rem;
-	display:block;
+	grid-column:2;
+	grid-row: 1;
 	background-color:hsl(178, 68%, 46%);
 }
+	.about h1{display:none}
+	.about p{margin-left:1rem;}
 /* =========================================================
    hours.html
    ========================================================= */
@@ -999,17 +999,15 @@ textarea {
 	list-style-type:none;
 }
 /* =================================================================
-   About.html
+   about.html
    =============================================================== */
 	.about{
-	margin:auto;
-	padding:auto;
-	width:20rem;
-	display:block;
+	grid-column:2;
+	grid-row: 1;
 	background-color:hsl(178, 68%, 46%);
 }
-
-
+	.about h1{display:none}
+	.about p{margin-left:1rem;}
 /* ================================================================
    hours.html
    ================================================================ */
