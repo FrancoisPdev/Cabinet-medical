@@ -667,7 +667,7 @@ textarea {
 /* =========================================================
 	pratician1.html
    ========================================================= */
-	.disciple1{background-image:url(../img/pratician1.3.jpeg);height:150px;width:150px;grid-column:1;grid-row: 1;}
+
 	.pratician1{
 	grid-column:2;
 	grid-row: 1;
@@ -675,7 +675,7 @@ textarea {
 /* =========================================================
 	pratician2.html
    ========================================================= */
-	.disciple2{background-image:url(../img/pratician2.2.jpeg);height:300px;width:300px;grid-column:1;grid-row: 1;}
+	
 	.pratician2{
 	grid-column:2;
 	grid-row: 1;
