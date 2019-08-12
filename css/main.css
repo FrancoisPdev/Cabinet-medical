@@ -14,7 +14,6 @@
 html {
   color: #222;
   font-size: 1em;
-  line-height: 1.4;
 }
 
 /*
@@ -98,6 +97,18 @@ textarea {
    Author's custom styles
 
    ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -199,7 +210,7 @@ textarea {
 /* ===============================
 	Mobile version
    =============================== */
-	@media only screen and (max-width: 280px) {
+	@media only screen and (min-width: 280px), only screen and ( max-width:550px) {
 	p{
 	font-family: 'Lato', sans-serif;
 	display: block;
@@ -236,7 +247,6 @@ textarea {
 /* =========================================================
 	pratician1.html
    ========================================================= */
-	.disciple1{background-image:url(../img/pratician1.2.jpeg);height:150px;width:150px;grid-column:1;grid-row: 1;}
 	.pratician1{
 	grid-column:2;
 	grid-row: 1;
@@ -246,7 +256,6 @@ textarea {
 /* =========================================================
 	pratician2.html
    ========================================================= */
-	.disciple2{background-image:url(../img/pratician2.1.jpeg);height:150px;width:150px;grid-column:1;grid-row: 1;}
 	.pratician2{
 	grid-column:2;
 	grid-row: 1;
@@ -391,12 +400,12 @@ textarea {
    ========================================================= */
 * {box-sizing: border-box;}
 	.wrapper {
-  max-width: 117.5rem;
+  max-width:280px;
   margin: 0 auto;
 }
 
 	.wrapper > div {
-	border: 1rem solid rgb(233,171,88);
+	border:.1rem solid rgb(233,171,88);
   border-radius:.5rem;
   background-color:hsl(211, 49%, 63%);
   padding: 1rem;
@@ -406,17 +415,18 @@ textarea {
 	display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap:1rem;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(5rem, auto);
   padding: 1rem 1rem 1rem 1rem;
 }
 }
 /*
 *
-*****
-*****
+***************************************************************
+***************************************************************
 *
 */
-	@media only screen and (max-width: 700px) {
+	/* Small devices (portrait tablets and large phones, 600px and up) */
+	@media only screen and (min-width: 600px), only screen and (max-wiDth: 900px){
 	p{
 	font-family: 'Lato', sans-serif;
 }
@@ -452,7 +462,6 @@ textarea {
 /* =========================================================
 	pratician1.html
    ========================================================= */
-	.disciple1{background-image:url(../img/pratician1.2.jpeg);height:150px;width:150px;grid-column:1;grid-row: 1;}
 	.pratician1{
 	grid-column:2;
 	grid-row: 1;
@@ -462,7 +471,6 @@ textarea {
 /* =========================================================
 	pratician2.html
    ========================================================= */
-	.disciple2{background-image:url(../img/pratician2.1.jpeg);height:150px;width:150px;grid-column:1;grid-row: 1;}
 	.pratician2{
 	grid-column:2;
 	grid-row: 1;
@@ -608,7 +616,7 @@ textarea {
    ========================================================= */
 * {box-sizing: border-box;}
 	.wrapper {
-  max-width: 940px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -623,14 +631,15 @@ textarea {
 	display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap:1rem;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(auto);
   padding: 1rem 1rem 1rem 1rem;
 }
 }
 /* ===============================
 	Tablette version
    =============================== */
-	@media only screen and (min-width: 1024px) {
+	/* Medium devices (landscape tablets, 768px and up) */
+	@media only screen and (min-width: 768px), only screen and (max-width:1366px){
 	p{
 	font-family: 'Lato', sans-serif;
 }
@@ -667,7 +676,6 @@ textarea {
 /* =========================================================
 	pratician1.html
    ========================================================= */
-
 	.pratician1{
 	grid-column:2;
 	grid-row: 1;
@@ -675,7 +683,6 @@ textarea {
 /* =========================================================
 	pratician2.html
    ========================================================= */
-	
 	.pratician2{
 	grid-column:2;
 	grid-row: 1;
@@ -822,8 +829,8 @@ textarea {
    ========================================================= */
 * {box-sizing: border-box;}
 	.wrapper {
-  max-width: 940px;
-  margin:4.4rem;
+  max-width: 1024px;
+  margin:1rem;
 }
 
 	.wrapper > div {
@@ -843,7 +850,8 @@ textarea {
 /* =========================================================
 	Desktop version
    ========================================================= */
-	@media only screen and (min-width: 1280px) {
+	/* Extra large devices (large laptops and desktops, 1200px and up) */
+	@media only screen and (min-width: 1200px), only screen and (max-width: 1200px) {
 	p{
 	font-family: 'Lato', sans-serif;
 }
@@ -880,7 +888,6 @@ textarea {
 /* =========================================================
 	pratician1.html
    ========================================================= */
-	.disciple1{background-image:url(../img/pratician1.jpeg);height:500px;width:500px;grid-column:1;grid-row: 1;}
 	.pratician1{
 	grid-column:2;
 	grid-row: 1;
@@ -888,7 +895,6 @@ textarea {
 /* =========================================================
 	pratician2.html
    ========================================================= */
-	.disciple2{background-image:url(../img/pratician2.jpeg);height:500px;width:500px;grid-column:1;grid-row: 1;}
 	.pratician2{
 	grid-column:2;
 	grid-row: 1;
@@ -1035,8 +1041,8 @@ textarea {
    ========================================================= */
 * {box-sizing: border-box;}
 	.wrapper {
-	max-width: 940px;
-  margin:5rem;
+	max-width: 1200px;
+  margin:1rem;
 }
 	.wrapper > div {
 	border: .1rem solid rgb(233,171,88);
@@ -1049,230 +1055,15 @@ textarea {
 	display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap:1rem;
-  grid-auto-rows: minmax(100px, auto);
-}
-}
-/*
-*
-*
-****************************************
-****************************************
-*
-*
-*/
-	@media only screen and (max-width: 1920px){
-	p{
-	font-family: 'Lato', sans-serif;
-}
-	header{
-	height:auto;
-	border:.1rem solid black;
-	background-color:hsl(211, 49%, 63%);
-}
-	header p{
-	text-align:center;
-}
-	.bigfont{
-	font-size:1.5rem;
-	padding-top: 2.5rem;
-}
-	footer{
-	height:auto;
-	border:.1rem solid black;
-	background-color:hsl(211, 49%, 63%);
-}
-	footer p{
-	text-align:center;
-	padding-left:4rem;
-	
-}
-	footer li{
-	display:inline-block;
-	padding:auto;
-	margin:auto;
-}
-	li {
-	list-style-type:none;
-}
-/* =========================================================
-	pratician1.html
-   ========================================================= */
-	.disciple1{background-image:url(../img/pratician1.jpeg);height:500px;width:500px;grid-column:1;grid-row: 1;}
-	.pratician1{
-	grid-column:2;
-	grid-row: 1;
-}
-/* =========================================================
-	pratician2.html
-   ========================================================= */
-	.disciple2{background-image:url(../img/pratician2.jpeg);height:500px;width:500px;grid-column:1;grid-row: 1;}
-	.pratician2{
-	grid-column:2;
-	grid-row: 1;
-}
-/* =========================================================
-   about.html
-   ========================================================= */
-	.about{
-	grid-column:2;
-	grid-row: 1;
-	background-color:hsl(178, 68%, 46%);
-}
-	.about h1{display:none}
-	.about p{margin-left:1rem;}
-/* =========================================================
-   hours.html
-   ========================================================= */
-	.hours{
-	grid-column: 2;
-	grid-row:1;
-}	
-	table,
-	td {
-    border: .1rem solid #333;
-    margin:auto; 
-}
-
-	thead,
-	tfoot {
-    background-color:hsl(204, 98%, 38%);
-    color: #fff;
-}
-/* =========================================================
-   urgence.html
-   ========================================================= */	
-	.urgence, blockquote, .urgetop{
-
-	background-color:hsl(15, 100%, 50%);
-		
-}
-	blockquote, .urgence p{color:#ffffff;}
-	.urgetop{
-	grid-column:2;
-	grid-row: 1;
-}
-	blockquote{
-	grid-column: 1;
-	grid-row: 1 / 2;
-}
-/* ================================================================= 
-   Contact.html
-   ================================================================= */
-	.contactleft {
-  grid-column:2;
-  grid-row:1;
-}
-	.contactright {
-  grid-column:1/1;
-  grid-row:1/4;
-}
-
-	form {
-  /* Pour le centrer dans la page */
-
-  /* Pour voir les limites du formulaire */
-  padding:.1em;
-  border:.1rem solid #CCC;
-  border-radius: 1em;
-}
-
-	div + div {
-  margin-top:.1rem;
-}
-
-	label {
-  /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
-  display: inline-block;
-  width: 90px;
-  text-align: right;
-}
-
-	input, textarea {
-  /* Afin de s'assurer que tous les champs textuels utilisent la même police
-     Par défaut, textarea utilise une police à espacement constant */
-  font: 1rem sans-serif;
-
-  /* Pour donner la même dimension à tous les champs textuels */
-  width: 300px;
-
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
-
-  /* Pour harmoniser l'apparence des bordures des champs textuels */
-  border: .1rem solid #999;
-}
-
-	input:focus, textarea:focus {
-  /* Afin de réhausser les éléments actifs */
-  border-color: #000;
-}
-
-	textarea {
-  /* Pour aligner correctement les champs multilignes et leurs étiquettes */
-  vertical-align: top;
-
-  /* Pour donner assez d'espace pour entrer du texte */
-  height: 5rem;
-
-  /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
-     Cela ne marche pas avec tous les navigateurs  */
-  resize: vertical;
-}
-
-	.button {
-  /* Pour positionner les boutons de la même manière que les champs textuels */
-  padding-left: 90px; /* même dimension que les étiquettes */
-}
-	
-	button {
-  /* Cette marge représente approximativement le même espace
-     que celui entre les étiquettes et les champs textuels */
-  margin-left: .5rem;
-}
-/* =========================================================
-   iframe
-   ========================================================= */
-	.wrapper iframe{
-	top: 0;
-	left: 0;
-	width:100%;
-	height:100%;
-}
-/* =========================================================
-	Join Us
-   ========================================================= */
-	.joinus{
-	grid-column: 2;
-	grid-row:1;
-}
-.joinus h1{display:none}
-/* =========================================================
-	A-grid
-   ========================================================= */
-* {box-sizing: border-box;}
-	.wrapper {
-  max-width: 117.5rem;
-  margin:1.5rem;
-}
-
-	.wrapper > div {
-	border: .1rem solid rgb(233,171,88);
-  border-radius:.5rem;
-  background-color:hsl(211, 49%, 63%);
-  padding:1rem;
-  color: #d9480f;
-}
-	.wrapper {
-	display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap:1.3rem;
   grid-auto-rows: minmax(10rem, auto);
 }
 }
 /*
 *
-***
-***
+*
+****************************************
+****************************************
+*
 *
 */
   /* Style adjustments for viewports that meet the condition */
