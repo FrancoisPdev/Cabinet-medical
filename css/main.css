@@ -13,7 +13,7 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 /*
@@ -97,7 +97,7 @@ textarea {
    Author's custom styles
 
    ========================================================================== */
-
+	body{display: grid}
 
 
 
@@ -247,27 +247,16 @@ textarea {
 /* =========================================================
 		pratician1.html
    ========================================================= */
-	.pratician1{
-	grid-column:2;
-	grid-row: 1;
-}
-
-
+	.pratician1{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
 /* =========================================================
 		pratician2.html
    ========================================================= */
-	.pratician2{
-	grid-column:2;
-	grid-row: 1;
-}
+	.pratician2{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
 /* =================================================================
   		 about.html
    =============================================================== */
-	.about{
-	grid-column:2;
-	grid-row: 1;
-	background-color:hsl(178, 68%, 46%);
-}
+	.about{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
+
 	.about h1{display:none}
 	.about p{margin-left:1rem;}
 /* =========================================================
@@ -305,20 +294,20 @@ textarea {
 	grid-row: 1 / 2;
 }
 /* ========================================================= 
-   		Contact.html
+		Contact.html
    ========================================================= */
 	.contactleft {
   grid-column:2;
   grid-row:1;
 }
 	.contactright {
-  grid-column:1/1;
-  grid-row:1/4;
+  grid-column:1;
+  grid-row:1;
 }
 
 	form {
   /* Pour le centrer dans la page */
-}
+
   /* Pour voir les limites du formulaire */
   padding:.1em;
   border: .1rem solid #CCC;
@@ -394,6 +383,11 @@ textarea {
 	grid-column: 2;
 	grid-row:1;
 }
+/* =========================================================
+		GDPR
+   ========================================================= */
+	.gdpr{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
+	.gdpr p{margin-left:.5rem;}
 	.joinus h1{display:none}
 /* =========================================================
 		A-grid
@@ -462,34 +456,23 @@ textarea {
 /* =========================================================
  		pratician1.html
    ========================================================= */
-	.pratician1{
-	grid-column:2;
-	grid-row: 1;
-}
-
-
+	.pratician1{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
 /* =========================================================
  		pratician2.html
    ========================================================= */
-	.pratician2{
-	grid-column:2;
-	grid-row: 1;
-}
+	.pratician2{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
 /* =========================================================
 		   about.html
    ========================================================= */
-	.about{
-	grid-column:2;
-	grid-row: 1;
-	background-color:hsl(178, 68%, 46%);
-}
+	.about{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
+
 	.about h1{display:none}
 	.about p{margin-left:1rem;}
 /* =========================================================
  		 hours.html
    ========================================================= */
 	.hours{
-	grid-column:1;
+	grid-column:2;
 	grid-row:1;
 }	
 	table,
@@ -521,15 +504,15 @@ textarea {
 	grid-row: 1 / 2;
 }
 /* ========================================================= 
-		   Contact.html
+		Contact.html
    ========================================================= */
 	.contactleft {
   grid-column:2;
   grid-row:1;
 }
 	.contactright {
-  grid-column:1/1;
-  grid-row:1/4;
+  grid-column:1;
+  grid-row:1;
 }
 
 	form {
@@ -606,11 +589,14 @@ textarea {
 /* =========================================================
 		Join Us
    ========================================================= */
-	.joinus{
-	grid-column: 2;
-	grid-row:1;
+	.joinus{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
 }
 	.joinus h1{display:none}
+/* =========================================================
+		GDPR
+   ========================================================= */
+	.gdpr{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
+	.gdpr p{margin-left:.5rem;}
 /* =========================================================
 		A-grid
    ========================================================= */
@@ -676,24 +662,17 @@ textarea {
 /* =========================================================
 		pratician1.html
    ========================================================= */
-	.pratician1{
-	grid-column:2;
-	grid-row: 1;
+	.pratician1{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;/**/}
 }
 /* =========================================================
 		pratician2.html
    ========================================================= */
-	.pratician2{
-	grid-column:2;
-	grid-row: 1;
+	.pratician2{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
 }
 /* =========================================================
 		about.html
    ========================================================= */
-	.about{
-	grid-column:2;
-	grid-row: 1;
-	background-color:hsl(178, 68%, 46%);
+	.about{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
 }
 	.about h1{display:none}
 	.about p{margin-left:1rem;}
@@ -701,7 +680,7 @@ textarea {
 		hours.html
    ========================================================= */
 	.hours{
-	grid-column:1;
+	grid-column:2;
 	grid-row:1;
 }	
 	table,
@@ -732,16 +711,16 @@ textarea {
 	grid-column: 1;
 	grid-row: 1 / 2;
 }
-/* =========================================================
-   		Contact.html
+/* ========================================================= 
+		Contact.html
    ========================================================= */
 	.contactleft {
   grid-column:2;
   grid-row:1;
 }
 	.contactright {
-  grid-column:1/1;
-  grid-row:1/4;
+  grid-column:1;
+  grid-row:1;
 }
 
 	form {
@@ -819,11 +798,14 @@ textarea {
 /* =========================================================
 		Join Us
    ========================================================= */
-	.joinus{
-	grid-column: 2;
-	grid-row:1;
+	.joinus{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
 }
 	.joinus h1{display:none}
+/* =========================================================
+		GDPR
+   ========================================================= */
+	.gdpr{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
+	.gdpr p{margin-left:.5rem;}
 /* =========================================================
 		A-grid
    ========================================================= */
@@ -868,7 +850,7 @@ textarea {
 	padding-top: 2.5rem;
 }
 	footer{
-	height:auto;
+	height:15rem;
 	border:.1rem solid black;
 	background-color:hsl(211, 49%, 63%);
 }
@@ -887,25 +869,17 @@ textarea {
 }
 /* =========================================================
 		pratician1.html
-   ========================================================= */
-	.pratician1{
-	grid-column:2;
-	grid-row: 1;
-}
+   ========================================================= */	
+	.pratician1{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
 /* =========================================================
 		pratician2.html
    ========================================================= */
-	.pratician2{
-	grid-column:2;
-	grid-row: 1;
+	.pratician2{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
 }
 /* =========================================================
 		about.html
    ========================================================= */
-	.about {
-	grid-column:2;
-	grid-row: 1;
-	background-color:hsl(178, 68%, 46%);
+	.about{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
 }
 	.about h1{display:none}
 	.about p{margin-left:1rem;}
@@ -913,7 +887,7 @@ textarea {
 		hours.html
    ========================================================= */
 	.hours{
-	grid-column:1;
+	grid-column:2;
 	grid-row:1;
 }
 	table,
@@ -941,7 +915,7 @@ textarea {
 	grid-row: 1;
 }
 	blockquote{
-	grid-column: 1;
+	grid-column:1;
 	grid-row: 1 / 2;
 }
 /* ========================================================= 
@@ -953,7 +927,7 @@ textarea {
 }
 	.contactright {
   grid-column:1;
-  grid-row:1/4;
+  grid-row:1;
 }
 	
 
@@ -1031,11 +1005,13 @@ textarea {
 /* =========================================================
 		Join Us
    ========================================================= */
-	.joinus{
-	grid-column: 2;
-	grid-row:1;
-}
-.joinus h1{display:none}
+	.joinus{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
+	.joinus h1{display:none}
+/* =========================================================
+		GDPR
+   ========================================================= */
+	.gdpr{grid-column:2;grid-row:1;/**/background-color:hsl(211, 49%, 63%);/**/border:.1rem solid black;border-radius:.5rem;}
+	.gdpr p{margin-left:.5rem;}
 /* =========================================================
 		A-grid
    ========================================================= */
