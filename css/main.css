@@ -97,12 +97,8 @@ textarea {
    Author's custom styles
 
    ========================================================================== */
-	body{
-	display: grid;
-	background-image:url(../img/the-polygon.jpg);
-	background-repeat:no-repeat;
-	background-size:100% 100%;
-}
+	body{display: grid;}
+
 	a:visited{color:red;}
 	a{text-decoration:none}
 	.one:hover{border-radius:100%;/**/text-align:center;/**/display:block;}
@@ -111,9 +107,6 @@ textarea {
 	.four:hover{border-radius:100%;/**/text-align:center;/**/display:block;}
 	.five:hover{border-radius:100%;/**/text-align:center;/**/display:block;}
 	.six:hover{border-radius:100%;/**/text-align:center;/**/display:block;}
-
-
-
 /* ==========================================================================
 				@import fonts
    ========================================================================== */
@@ -210,9 +203,23 @@ textarea {
    ========================================================================== */
 
 /* ==========================================================================
-			Mobile version
+
+
+
+			Mobile version / SMALL DEVICE ***********************
+
+
+
    =========================================================================== */
 	@media only screen and (min-width: 280px), only screen and ( max-width:599px) {
+	body{
+	display: grid;
+	max-width:100%;
+	height:100%;
+	background-image:url(../img/the-polygon.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
 	p{
 	font-family: 'Lato', sans-serif;
 	display: block;
@@ -420,7 +427,7 @@ textarea {
 ***************************************************************
 
 
-*************** SMALL DEVICE **********************************
+------------------ SMALL DEVICE -------------------------------
 
 
 ***************************************************************
@@ -428,6 +435,14 @@ textarea {
 */
 	/* Small devices (portrait tablets and large phones, 600px and up) */
 	@media only screen and (min-width: 600px), only screen and (max-wiDth: 900px){
+	body{
+	display: grid;
+	max-width:100%;
+	height:100%;
+	background-image:url(../img/the-polygon.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
 	p{
 	font-family: 'Lato', sans-serif;
 }
@@ -642,6 +657,14 @@ textarea {
    =============================== */
 	/* Medium devices (landscape tablets, 768px and up) */
 	@media only screen and (min-width: 768px), only screen and (max-width:1366px){
+	body{
+	display: grid;
+	max-width:100%;
+	height:100%;
+	background-image:url(../img/the-polygon.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}	
 	p{
 	font-family: 'Lato', sans-serif;
 }
