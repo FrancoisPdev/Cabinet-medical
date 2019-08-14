@@ -97,7 +97,12 @@ textarea {
    Author's custom styles
 
    ========================================================================== */
-	body{display: grid;/**/background-image:;}
+	body{
+	display: grid;
+	background-image:url(../img/the-polygon.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
 	a:visited{color:red;}
 	a{text-decoration:none}
 	.one:hover{border-radius:100%;/**/text-align:center;/**/display:block;}
@@ -213,7 +218,7 @@ textarea {
 	display: block;
 }
 	header{
-	height:auto;
+	height:15rem;
 	border:.1rem solid black;
 	background-color: hsl(211, 49%, 63%);
 }
@@ -230,7 +235,6 @@ textarea {
 }
 	footer p{
 	text-align:center;
-
 }
 	footer li{
 	display:inline-block;
@@ -394,28 +398,31 @@ textarea {
    ========================================================= */
 * {box-sizing: border-box;}
 	.wrapper {
-  max-width:280px;
-  margin: 0 auto;
+	max-width:800px;
+	margin:5rem;
 }
-
 	.wrapper > div {
 	border:.1rem solid rgb(233,171,88);
   border-radius:.5rem;
   background-color:hsl(211, 49%, 63%);
-  padding: 1rem;
+  padding:1rem;
   color: #d9480f;
 }
 	.wrapper {
 	display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap:1rem;
-  grid-auto-rows: minmax(7rem, auto);
-  padding: 1rem 1rem 1rem 1rem;
+  grid-gap:2rem;
+  grid-auto-rows: minmax(10rem, auto);
 }
 }
 /*
 *
 ***************************************************************
+
+
+*************** SMALL DEVICE **********************************
+
+
 ***************************************************************
 *
 */
@@ -425,7 +432,7 @@ textarea {
 	font-family: 'Lato', sans-serif;
 }
 	header{
-	height:auto;
+	height:15rem;
 	border:.1rem solid black;
 	background-color:hsl(211, 49%, 63%);
 }
@@ -608,7 +615,7 @@ textarea {
 * {box-sizing: border-box;}
 	.wrapper {
   max-width: 600px;
-  margin: 0 auto;
+  margin:5rem;
 }
 
 	.wrapper > div {
@@ -627,7 +634,11 @@ textarea {
 }
 }
 /* ===============================
-	Tablette version
+	
+
+	Tablette version **********
+   
+
    =============================== */
 	/* Medium devices (landscape tablets, 768px and up) */
 	@media only screen and (min-width: 768px), only screen and (max-width:1366px){
@@ -820,33 +831,44 @@ textarea {
 * {box-sizing: border-box;}
 	.wrapper {
   max-width: 1024px;
-  margin:1rem;
+  margin:5rem;
 }
-
 	.wrapper > div {
-  border: .1rem solid rgb(233,171,88);
-  border-radius: .5rem;
+	border:.1rem solid rgb(233,171,88);
+  border-radius:.5rem;
   background-color:hsl(211, 49%, 63%);
-  padding:.5rem;
+  padding:1rem;
   color: #d9480f;
 }
 	.wrapper {
 	display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap:.8rem;
-  grid-auto-rows: minmax(100px, auto);
+  grid-gap:2rem;
+  grid-auto-rows: minmax(10rem, auto);
 }
 }
 /* =========================================================
-	Desktop version
+	
+
+	Desktop version ***********************************
+
+
    ========================================================= */
 	/* Extra large devices (large laptops and desktops, 1200px and up) */
 	@media only screen and (min-width: 1200px), only screen and (max-width: 1900px) {
+	body{
+	display: grid;
+	max-width:100%;
+	height:100%;
+	background-image:url(../img/the-polygon.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
 	p{
 	font-family: 'Lato', sans-serif;
 }
 	header{
-	height:auto;
+	height:15rem;
 	border:.1rem solid black;
 	background-color:hsl(211, 49%, 63%);
 }
@@ -1030,11 +1052,11 @@ textarea {
    ========================================================= */
 * {box-sizing: border-box;}
 	.wrapper {
-	max-width: 1200px;
-  margin:1rem;
+	max-width: 1900px;
+  margin:5rem;
 }
 	.wrapper > div {
-	border: .1rem solid rgb(233,171,88);
+	border:.1rem solid rgb(233,171,88);
   border-radius:.5rem;
   background-color:hsl(211, 49%, 63%);
   padding:1rem;
@@ -1043,7 +1065,7 @@ textarea {
 	.wrapper {
 	display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap:1rem;
+  grid-gap:2rem;
   grid-auto-rows: minmax(10rem, auto);
 }
 }
