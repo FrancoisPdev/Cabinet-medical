@@ -16,6 +16,8 @@
    ========================================================================== */
 
 html {
+  padding: 0;
+  margin: 0;
   color: #222;
   font-size: 1.2rem;
 }
@@ -109,24 +111,24 @@ textarea {
 
    ========================================================================== */
 
-body {
-  display: grid;
-}
+  body {
+  display:grid;
+  }
 
-a:visited {
+  a:visited {
   color: red;
-}
+  }
 
-a {
-  text-decoration: none
-}
+  a {
+  text-decoration: none;
+  }
 
-.one:hover,
-.two:hover,
-.three:hover,
-.four:hover,
-.five:hover,
-.six:hover {
+  .one:hover,
+  .two:hover,
+  .three:hover,
+  .four:hover,
+  .five:hover,
+  .six:hover {
   border-radius: 100%;
   /**/
   text-align: center;
@@ -138,7 +140,10 @@ a {
   background-repeat: no-repeat;
   /**/
   background-position: center;
-}
+  }
+  li {
+    list-style-type: none;
+  }
 
 /* ==========================================================================
 				@import fonts
@@ -252,8 +257,7 @@ a {
 
    =========================================================================== */
 
-@media only screen and (min-width: 280px),
-only screen and ( max-width:599px) {
+@media screen and (max-width: 767px){
   body {
     display: grid;
   }
@@ -284,9 +288,6 @@ only screen and ( max-width:599px) {
     display: inline-block;
     margin: auto;
     padding: auto;
-  }
-  li {
-    list-style-type: none;
   }
   /* =========================================================
 		pratician1.html
@@ -538,8 +539,7 @@ only screen and ( max-width:599px) {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (min-width: 600px),
-only screen and (max-wiDth: 900px) {
+@media screen and (min-width: 768px) and (max-width: 1067px){
   body {
     display: grid;
   }
@@ -569,9 +569,6 @@ only screen and (max-wiDth: 900px) {
     display: inline-block;
     margin: auto;
     padding: auto;
-  }
-  li {
-    list-style-type: none;
   }
   /* =========================================================
  		pratician1.html
@@ -821,8 +818,7 @@ only screen and (max-wiDth: 900px) {
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-@media only screen and (min-width: 768px),
-only screen and (max-width:1366px) {
+@media screen and (min-width: 1068px) and (max-width: 1661px) {
   body {
     display: grid;
   }
@@ -853,9 +849,6 @@ only screen and (max-width:1366px) {
     display: inline-block;
     margin: auto;
     padding: auto;
-  }
-  li {
-    list-style-type: none;
   }
   /* =========================================================
 		pratician1.html
@@ -1105,8 +1098,7 @@ only screen and (max-width:1366px) {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
-@media only screen and (min-width: 1200px),
-only screen and (max-width: 1900px) {
+@media screen and (min-width: 1662px){
   body {
     display: grid;
   }
@@ -1137,9 +1129,6 @@ only screen and (max-width: 1900px) {
     display: inline-block;
     margin: auto;
     padding: auto;
-  }
-  li {
-    list-style-type: none;
   }
   /* =========================================================
 		pratician1.html
