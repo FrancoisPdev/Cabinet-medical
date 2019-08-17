@@ -110,6 +110,14 @@ textarea {
    Author's custom styles
 
    ========================================================================== */
+	header{
+	grid-column: 1 / 4;
+        grid-row: 1;
+  }	
+	footer{
+        grid-column: 1 / 4;
+        grid-row: 4;
+  }
   a:visited {
   color: red;
   }
@@ -139,14 +147,7 @@ textarea {
   li {
     list-style-type: none;
   }
-	header{
-	grid-column: 1 / 4;
-        grid-row: 1;
-  }	
-	footer{
-        grid-column: 1 / 4;
-        grid-row: 4;
-  }
+
 /* ==========================================================================
 				@import fonts
    ========================================================================== */
@@ -260,9 +261,31 @@ textarea {
    =========================================================================== */
 
 @media screen and (max-width: 767px){
-  body {
-    display: grid;
+  
+  /* =========================================================
+		A-grid
+   ========================================================= */
+  * {
+    box-sizing: border-box;
   }
+  .wrapper-home {
+    max-width: 767px;
+    margin:1.5rem;
+  }
+  .wrapper-home>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding:.1rem;
+    color: #d9480f;
+  }
+  .wrapper-home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:1rem;
+    grid-auto-rows: minmax(10rem, auto);
+  }
+
   p {
     font-family: 'Lato', sans-serif;
     display: block;
@@ -294,6 +317,25 @@ textarea {
   /* =========================================================
 		pratician1.html
    ========================================================= */
+
+    .wrapper-marta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:.1rem;
+    grid-auto-rows: minmax(1rem, auto);
+  }
+  .wrapper-marta {
+    max-width: 767px;
+    margin: .5rem;
+  }
+  .wrapper-marta>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color:hsl(211, 49%, 63%);
+    padding:1rem;
+    color: #d9480f;
+  }
+
   .pratician1 {
     grid-column: 2;
     grid-row: 1;
@@ -313,6 +355,25 @@ textarea {
   /* =========================================================
 		pratician2.html
    ========================================================= */
+
+    .wrapper-michel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:.1rem;
+    grid-auto-rows: minmax(1rem, auto);
+  }
+  .wrapper-michel {
+    max-width: 767px;
+    margin: .5rem;
+  }
+  .wrapper-michel>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color:hsl(211, 49%, 63%);
+    padding:1rem;
+    color: #d9480f;
+  }
+
   .pratician2 {
     grid-column: 2;
     grid-row: 1;
@@ -332,6 +393,26 @@ textarea {
   /* =================================================================
   		 about.html
    =============================================================== */
+
+    .wrapper-about {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-about {
+    max-width: 767px;
+    margin: .1rem;
+  }
+  .wrapper-about>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .about {
     grid-column: 2;
     grid-row: 1;
@@ -354,8 +435,26 @@ textarea {
   /* =========================================================
   		 hours.html
    ========================================================= */
+
+    .wrapper-hours {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(1rem, auto);
+  }
+  .wrapper-hours {
+    max-width: 767px;
+    margin: .5rem;
+  }
+  .wrapper-hours>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding:.1rem;
+    color: #d9480f;
+  }
+
   .hours {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 1;
   }
   table,
@@ -371,6 +470,27 @@ textarea {
   /* =========================================================
    		urgence.html
    ========================================================= */
+
+    .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem);
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: hsl(15, 100%, 50%);
+  }
+  .wrapper {
+    max-width: 767px;
+    margin: .1rem;
+  }
+  .wrapper>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(15, 100%, 50%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .urgence,
   blockquote,
   .urgetop {
@@ -392,82 +512,59 @@ textarea {
 		Contact.html
    ========================================================= */
   .contactleft {
-    grid-column: 2;
+    grid-column: 1 / 2;
     grid-row: 1;
   }
   .contactright {
     grid-column: 1;
     grid-row: 1;
   }
-  form {
-    /* Pour le centrer dans la page */
-    /* Pour voir les limites du formulaire */
-    padding: .1em;
-    border: .1rem solid #CCC;
+    .wrapper-contact {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-contact {
+    max-width: 767px;
+    margin: .1rem;
+  }
+  .wrapper-contact>div {
+    border: .1rem solid rgb(233, 171, 88);
     border-radius: .5rem;
-  }
-  div+div {
-    margin-top: .1em;
-  }
-  label {
-    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-  }
-  input,
-  textarea {
-    /* Afin de s'assurer que tous les champs textuels utilisent la même police
-     Par défaut, textarea utilise une police à espacement constant */
-    font: 1em sans-serif;
-    /* Pour donner la même dimension à tous les champs textuels */
-    width: 300px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    /* Pour harmoniser l'apparence des bordures des champs textuels */
-    border: .1rem solid #999;
-  }
-  input:focus,
-  textarea:focus {
-    /* Afin de réhausser les éléments actifs */
-    border-color: #000;
-  }
-  textarea {
-    /* Pour aligner correctement les champs multilignes et leurs étiquettes */
-    vertical-align: top;
-    /* Pour donner assez d'espace pour entrer du texte */
-    height: .5rem;
-    /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
-     Cela ne marche pas avec tous les navigateurs  */
-    resize: vertical;
-  }
-  .button {
-    /* Pour positionner les boutons de la même manière que les champs textuels */
-    padding-left: 90px;
-    /* même dimension que les étiquettes */
-  }
-  button {
-    /* Cette marge représente approximativement le même espace
-     que celui entre les étiquettes et les champs textuels */
-    margin-left: .3rem;
-  }
-  /* =========================================================
-  		 iframe
-   ========================================================= */
-  iframe {
-    position: ;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
   }
   /* =========================================================
 		Join Us
    ========================================================= */
+
+    .wrapper-joinus {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-joinus {
+    max-width: 767px;
+    margin: .1rem;
+  }
+  .wrapper-joinus>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .joinus {
     grid-column: 2;
     grid-row: 1;
     /**/
+    background-color: hsl(211, 49%, 63%);
     border: .1rem solid black;
     border-radius: .5rem;
   }
@@ -484,6 +581,26 @@ textarea {
   /* =========================================================
 		GDPR
    ========================================================= */
+
+    .wrapper-gdpr {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-gdpr {
+    max-width: 767px;
+    margin: .1rem;
+  }
+  .wrapper-gdpr>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .gdpr {
     grid-column: 2;
     grid-row: 1;
@@ -500,29 +617,7 @@ textarea {
     /**/
     text-align: justify;
   }
-  /* =========================================================
-		A-grid
-   ========================================================= */
-  * {
-    box-sizing: border-box;
-  }
-  .wrapper {
-    max-width: 800px;
-    margin: 5rem;
-  }
-  .wrapper>div {
-    border: .1rem solid rgb(233, 171, 88);
-    border-radius: .5rem;
-    background-color: hsl(211, 49%, 63%);
-    padding: 1rem;
-    color: #d9480f;
-  }
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
-    grid-auto-rows: minmax(10rem, auto);
-  }
+
 }
 
 
@@ -542,10 +637,33 @@ textarea {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media screen and (min-width: 768px) and (max-width: 1067px){
-  body {
-    display: grid;
+ 
+  /* =========================================================
+		A-grid
+   ========================================================= */
+  * {
+    box-sizing: border-box;
   }
-  p {
+  .wrapper-home {
+    max-width: 1067px;
+    margin:1.5rem;
+  }
+  .wrapper-home>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding:3rem;
+    color: #d9480f;
+  }
+  .wrapper-home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:2rem;
+    grid-auto-rows: minmax(10rem);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+ p {
     font-family: 'Lato', sans-serif;
   }
   header {
@@ -575,6 +693,26 @@ textarea {
   /* =========================================================
  		pratician1.html
    ========================================================= */
+
+    .wrapper-marta {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-marta {
+    max-width: 1067px;
+    margin: 5rem;
+  }
+  .wrapper-marta>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .pratician1 {
     grid-column: 2;
     grid-row: 1;
@@ -594,6 +732,26 @@ textarea {
   /* =========================================================
  		pratician2.html
    ========================================================= */
+
+    .wrapper-michel {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-michel {
+    max-width: 1067px;
+    margin: 5rem;
+  }
+  .wrapper-michel>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .pratician2 {
     grid-column: 2;
     grid-row: 1;
@@ -613,6 +771,27 @@ textarea {
   /* =========================================================
 		   about.html
    ========================================================= */
+
+
+    .wrapper-about {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-about {
+    max-width: 1067px;
+    margin: 5rem;
+  }
+  .wrapper-about>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .about {
     grid-column: 2;
     grid-row: 1;
@@ -635,8 +814,28 @@ textarea {
   /* =========================================================
  		 hours.html
    ========================================================= */
+
+    .wrapper-hours {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-hours {
+    max-width: 1067px;
+    margin:1rem;
+  }
+  .wrapper-hours>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .hours {
-    grid-column: 2;
+    grid-column:1;
     grid-row: 1;
   }
   table,
@@ -652,6 +851,27 @@ textarea {
   /* =========================================================
   		 urgence.html
    ========================================================= */
+
+    .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: hsl(15, 100%, 50%);
+  }
+  .wrapper {
+    max-width: 1067px;
+    margin: 5rem;
+  }
+  .wrapper>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(15, 100%, 50%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .urgence,
   blockquote,
   .urgetop {
@@ -662,7 +882,7 @@ textarea {
     color: #ffffff;
   }
   .urgetop {
-    grid-column: 2;
+    grid-column: 2 / 3;
     grid-row: 1;
   }
   blockquote {
@@ -673,77 +893,54 @@ textarea {
 		Contact.html
    ========================================================= */
   .contactleft {
-    grid-column: 2;
+    grid-column: 1 / 2;
     grid-row: 1;
   }
   .contactright {
     grid-column: 1;
     grid-row: 1;
   }
-  form {
-    /* Pour le centrer dans la page */
-    /* Pour voir les limites du formulaire */
-    padding: .1rem;
-    border: .1rem solid #CCC;
-    border-radius: 1em;
+    .wrapper-contact {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
   }
-  div+div {
-    margin-top: .1rem;
+  .wrapper-contact {
+    max-width: 1067px;
+    margin: 5rem;
   }
-  label {
-    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-  }
-  input,
-  textarea {
-    /* Afin de s'assurer que tous les champs textuels utilisent la même police
-     Par défaut, textarea utilise une police à espacement constant */
-    font: 1em sans-serif;
-    /* Pour donner la même dimension à tous les champs textuels */
-    width: 300px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    /* Pour harmoniser l'apparence des bordures des champs textuels */
-    border: 1px solid #999;
-  }
-  input:focus,
-  textarea:focus {
-    /* Afin de réhausser les éléments actifs */
-    border-color: #000;
-  }
-  textarea {
-    /* Pour aligner correctement les champs multilignes et leurs étiquettes */
-    vertical-align: top;
-    /* Pour donner assez d'espace pour entrer du texte */
-    height: 5em;
-    /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
-     Cela ne marche pas avec tous les navigateurs  */
-    resize: vertical;
-  }
-  .button {
-    /* Pour positionner les boutons de la même manière que les champs textuels */
-    padding-left: 90px;
-    /* même dimension que les étiquettes */
-  }
-  button {
-    /* Cette marge représente approximativement le même espace
-     que celui entre les étiquettes et les champs textuels */
-    margin-left: .5em;
-  }
-  /* =========================================================
-		   iframe
-   ========================================================= */
-  iframe {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  .wrapper-contact>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
   }
   /* =========================================================
 		Join Us
    ========================================================= */
+
+    .wrapper-joinus {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-joinus {
+    max-width: 1067px;
+    margin: 5rem;
+  }
+  .wrapper-joinus>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .joinus {
     grid-column: 2;
     grid-row: 1;
@@ -766,6 +963,26 @@ textarea {
   /* =========================================================
 		GDPR
    ========================================================= */
+
+    .wrapper-gdpr {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-gdpr {
+    max-width: 1067px;
+    margin: 5rem;
+  }
+  .wrapper-gdpr>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .gdpr {
     grid-column: 2;
     grid-row: 1;
@@ -782,30 +999,7 @@ textarea {
     /**/
     text-align: justify;
   }
-  /* =========================================================
-		A-grid
-   ========================================================= */
-  * {
-    box-sizing: border-box;
-  }
-  .wrapper {
-    max-width: 600px;
-    margin: 5rem;
-  }
-  .wrapper>div {
-    border: .1rem solid rgb(233, 171, 88);
-    border-radius: .5rem;
-    background-color: hsl(211, 49%, 63%);
-    padding: 1rem;
-    color: #d9480f;
-  }
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    grid-auto-rows: minmax(10rem);
-    padding: 1rem 1rem 1rem 1rem;
-  }
+
 }
 
 
@@ -821,9 +1015,31 @@ textarea {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media screen and (min-width: 1068px) and (max-width: 1661px) {
-  body {
-    display: grid;
+  
+  /* =========================================================
+		A-grid
+   ========================================================= */
+  * {
+    box-sizing: border-box;
   }
+  .wrapper-home {
+    max-width: 1661px;
+    margin:3rem;
+  }
+  .wrapper-home>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+  .wrapper-home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    grid-auto-rows: minmax(10rem, auto);
+  }
+
   p {
     font-family: 'Lato', sans-serif;
   }
@@ -855,6 +1071,26 @@ textarea {
   /* =========================================================
 		pratician1.html
    ========================================================= */
+
+    .wrapper-marta {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-marta {
+    max-width: 1067px;
+    margin: 3rem;
+  }
+  .wrapper-marta>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .pratician1 {
     grid-column: 2;
     grid-row: 1;
@@ -874,6 +1110,26 @@ textarea {
   /* =========================================================
 		pratician2.html
    ========================================================= */
+
+    .wrapper-michel {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-michel {
+    max-width: 1067px;
+    margin: 3rem;
+  }
+  .wrapper-michel>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .pratician2 {
     grid-column: 2;
     grid-row: 1;
@@ -893,6 +1149,27 @@ textarea {
   /* =========================================================
 		about.html
    ========================================================= */
+
+
+    .wrapper-about {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(5rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-about {
+    max-width: 1661px;
+    margin: 5rem;
+  }
+  .wrapper-about>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .about {
     grid-column: 2;
     grid-row: 1;
@@ -915,8 +1192,28 @@ textarea {
   /* =========================================================
 		hours.html
    ========================================================= */
+
+    .wrapper-hours {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-hours {
+    max-width: 1661px;
+    margin: 3rem;
+  }
+  .wrapper-hours>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .hours {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 1;
   }
   table,
@@ -932,6 +1229,27 @@ textarea {
   /* =========================================================
    		urgence.html
    ========================================================= */
+
+    .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(5rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: hsl(15, 100%, 50%);
+  }
+  .wrapper {
+    max-width: 1661px;
+    margin: 5rem;
+  }
+  .wrapper>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(15, 100%, 50%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .urgence,
   blockquote,
   .urgetop {
@@ -953,78 +1271,54 @@ textarea {
 		Contact.html
    ========================================================= */
   .contactleft {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 1;
   }
   .contactright {
     grid-column: 1;
     grid-row: 1;
   }
-  form {
-    /* Pour le centrer dans la page */
-    /* Pour voir les limites du formulaire */
-    padding: .1rem;
-    border: .1rem solid #CCC;
-    border-radius: .1rem;
+    .wrapper-contact {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(5rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
   }
-  div+div {
-    margin-top: .1rem;
+  .wrapper-contact {
+    max-width: 1661px;
+    margin: 5rem;
   }
-  label {
-    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-  }
-  input,
-  textarea {
-    /* Afin de s'assurer que tous les champs textuels utilisent la même police
-     Par défaut, textarea utilise une police à espacement constant */
-    font: 1em sans-serif;
-    /* Pour donner la même dimension à tous les champs textuels */
-    width: 300px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    /* Pour harmoniser l'apparence des bordures des champs textuels */
-    border: 1px solid #999;
-  }
-  input:focus,
-  textarea:focus {
-    /* Afin de réhausser les éléments actifs */
-    border-color: #000;
-  }
-  textarea {
-    /* Pour aligner correctement les champs multilignes et leurs étiquettes */
-    vertical-align: top;
-    /* Pour donner assez d'espace pour entrer du texte */
-    height: 5em;
-    /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
-     Cela ne marche pas avec tous les navigateurs  */
-    resize: vertical;
-  }
-  .button {
-    /* Pour positionner les boutons de la même manière que les champs textuels */
-    padding-left: 90px;
-    /* même dimension que les étiquettes */
-  }
-  button {
-    /* Cette marge représente approximativement le même espace
-     que celui entre les étiquettes et les champs textuels */
-    margin-left: .5em;
-  }
-  /* =========================================================
-  		 iframe
-   ========================================================= */
-  .wrapper iframe {
-    position: ;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  .wrapper-contact>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
   }
   /* =========================================================
 		Join Us
    ========================================================= */
+
+    .wrapper-joinus {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(5rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-joinus {
+    max-width: 1661px;
+    margin: 5rem;
+  }
+  .wrapper-joinus>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .joinus {
     grid-column: 2;
     grid-row: 1;
@@ -1047,6 +1341,26 @@ textarea {
   /* =========================================================
 		GDPR
    ========================================================= */
+
+    .wrapper-gdpr {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(5rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-gdpr {
+    max-width: 1661px;
+    margin: 5rem;
+  }
+  .wrapper-gdpr>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .gdpr {
     grid-column: 2;
     grid-row: 1;
@@ -1063,29 +1377,7 @@ textarea {
     /**/
     text-align: justify;
   }
-  /* =========================================================
-		A-grid
-   ========================================================= */
-  * {
-    box-sizing: border-box;
-  }
-  .wrapper {
-    max-width: 1024px;
-    margin: 5rem;
-  }
-  .wrapper>div {
-    border: .1rem solid rgb(233, 171, 88);
-    border-radius: .5rem;
-    background-color: hsl(211, 49%, 63%);
-    padding: 1rem;
-    color: #d9480f;
-  }
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
-    grid-auto-rows: minmax(10rem, auto);
-  }
+
 }
 
 
@@ -1101,9 +1393,31 @@ textarea {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media screen and (min-width: 1662px){
-  body {
-    display: grid;
+  
+  /* =========================================================
+		A-grid
+   ========================================================= */
+  * {
+    box-sizing: border-box;
   }
+  .wrapper-home {
+    max-width: 1662px;
+    margin: 5rem;
+  }
+  .wrapper-homer> div{
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+  .wrapper-home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    grid-auto-rows: minmax(10rem, auto);
+  }
+
   p {
     font-family: 'Lato', sans-serif;
   }
@@ -1135,6 +1449,26 @@ textarea {
   /* =========================================================
 		pratician1.html
    ========================================================= */
+
+    .wrapper-marta {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-marta {
+    max-width: 1067px;
+    margin: 3rem;
+  }
+  .wrapper-marta>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .pratician1 {
     grid-column: 2;
     grid-row: 1;
@@ -1154,6 +1488,26 @@ textarea {
   /* =========================================================
 		pratician2.html
    ========================================================= */
+
+    .wrapper-michel {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-michel {
+    max-width: 1067px;
+    margin: 3rem;
+  }
+  .wrapper-michel>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .pratician2 {
     grid-column: 2;
     grid-row: 1;
@@ -1173,6 +1527,26 @@ textarea {
   /* =========================================================
 		about.html
    ========================================================= */
+
+    .wrapper-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-about {
+    max-width: 1662px;
+    margin: 5rem;
+  }
+  .wrapper-about>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .about {
     grid-column: 2;
     grid-row: 1;
@@ -1195,8 +1569,28 @@ textarea {
   /* =========================================================
 		hours.html
    ========================================================= */
+
+    .wrapper-hours {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-hours {
+    max-width: 1662px;
+    margin: 3rem;
+  }
+  .wrapper-hours>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .hours {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 1;
   }
   table,
@@ -1212,6 +1606,27 @@ textarea {
   /* =========================================================
 		urgence.html
    ========================================================= */
+
+    .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: hsl(15, 100%, 50%);
+  }
+  .wrapper {
+    max-width: 1662px;
+    margin: 5rem;
+  }
+  .wrapper>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(15, 100%, 50%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .urgence,
   blockquote,
   .urgetop {
@@ -1233,78 +1648,54 @@ textarea {
 		Contact.html
    ========================================================= */
   .contactleft {
-    grid-column: 2;
+    grid-column: 1 / 2;
     grid-row: 1;
   }
   .contactright {
     grid-column: 1;
     grid-row: 1;
   }
-  form {
-    /* Pour le centrer dans la page */
-    /* Pour voir les limites du formulaire */
-    padding: .1rem;
-    border: .1rem solid #CCC;
-    border-radius: 1em;
+    .wrapper-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
   }
-  div+div {
-    margin-top: .1em;
+  .wrapper-contact {
+    max-width: 1662px;
+    margin: 5rem;
   }
-  label {
-    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-  }
-  input,
-  textarea {
-    /* Afin de s'assurer que tous les champs textuels utilisent la même police
-     Par défaut, textarea utilise une police à espacement constant */
-    font: 1em sans-serif;
-    /* Pour donner la même dimension à tous les champs textuels */
-    width: 300px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    /* Pour harmoniser l'apparence des bordures des champs textuels */
-    border: .1rem solid #999;
-  }
-  input:focus,
-  textarea:focus {
-    /* Afin de réhausser les éléments actifs */
-    border-color: #000;
-  }
-  textarea {
-    /* Pour aligner correctement les champs multilignes et leurs étiquettes */
-    vertical-align: top;
-    /* Pour donner assez d'espace pour entrer du texte */
-    height: 5em;
-    /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
-     Cela ne marche pas avec tous les navigateurs  */
-    resize: vertical;
-  }
-  .button {
-    /* Pour positionner les boutons de la même manière que les champs textuels */
-    padding-left: 90px;
-    /* même dimension que les étiquettes */
-  }
-  button {
-    /* Cette marge représente approximativement le même espace
-     que celui entre les étiquettes et les champs textuels */
-    margin-left: .5em;
-  }
-  /* =========================================================
-		iframe
-   ========================================================= */
-  iframe {
-    position: ;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: auto;
+  .wrapper-contact>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
   }
   /* =========================================================
 		Join Us
    ========================================================= */
+
+    .wrapper-joinus {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-joinus {
+    max-width: 1662px;
+    margin: 5rem;
+  }
+  .wrapper-joinus>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .joinus {
     grid-column: 2;
     grid-row: 1;
@@ -1327,6 +1718,26 @@ textarea {
   /* =========================================================
 		GDPR
    ========================================================= */
+
+    .wrapper-gdpr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(10rem, auto);
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .wrapper-gdpr {
+    max-width: 1662px;
+    margin: 5rem;
+  }
+  .wrapper-gdpr>div {
+    border: .1rem solid rgb(233, 171, 88);
+    border-radius: .5rem;
+    background-color: hsl(211, 49%, 63%);
+    padding: 1rem;
+    color: #d9480f;
+  }
+
   .gdpr {
     grid-column: 2;
     grid-row: 1;
@@ -1343,29 +1754,7 @@ textarea {
     /**/
     text-align: justify;
   }
-  /* =========================================================
-		A-grid
-   ========================================================= */
-  * {
-    box-sizing: border-box;
-  }
-  .wrapper {
-    max-width: 1900px;
-    margin: 5rem;
-  }
-  .wrapper> div, header, footer {
-    border: .1rem solid rgb(233, 171, 88);
-    border-radius: .5rem;
-    background-color: hsl(211, 49%, 63%);
-    padding: 1rem;
-    color: #d9480f;
-  }
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
-    grid-auto-rows: minmax(10rem, auto);
-  }
+
 }
 
 
