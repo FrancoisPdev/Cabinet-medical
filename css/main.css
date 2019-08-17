@@ -110,11 +110,6 @@ textarea {
    Author's custom styles
 
    ========================================================================== */
-
-  body {
-  display:grid;
-  }
-
   a:visited {
   color: red;
   }
@@ -144,7 +139,14 @@ textarea {
   li {
     list-style-type: none;
   }
-
+	header{
+	grid-column: 1 / 4;
+        grid-row: 1;
+  }	
+	footer{
+        grid-column: 1 / 4;
+        grid-row: 4;
+  }
 /* ==========================================================================
 				@import fonts
    ========================================================================== */
@@ -1351,7 +1353,7 @@ textarea {
     max-width: 1900px;
     margin: 5rem;
   }
-  .wrapper>div {
+  .wrapper> div, header, footer {
     border: .1rem solid rgb(233, 171, 88);
     border-radius: .5rem;
     background-color: hsl(211, 49%, 63%);
