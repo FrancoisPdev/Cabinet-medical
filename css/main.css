@@ -315,7 +315,6 @@ textarea {
   footer li {
     display: inline-block;
     margin: auto;
-    padding: auto;
   }
   /* =========================================================
 		pratician1.html
@@ -396,7 +395,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
-    grid-auto-rows: minmax(10rem);
+    grid-auto-rows: minmax(10rem, auto);
     padding: 1rem 1rem 1rem 1rem;
   }
   .wrapper-about {
@@ -469,7 +468,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
-    grid-auto-rows: minmax(10rem);
+    grid-auto-rows: minmax(10rem, auto);
     padding: 1rem 1rem 1rem 1rem;
     background-color: hsl(15, 100%, 50%);
   }
@@ -516,7 +515,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
-    grid-auto-rows: minmax(10rem);
+    grid-auto-rows: minmax(10rem, auto);
     padding: 1rem 1rem 1rem 1rem;
   }
   .wrapper-contact {
@@ -537,7 +536,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
-    grid-auto-rows: minmax(10rem);
+    grid-auto-rows: minmax(10rem, auto);
     padding: 1rem 1rem 1rem 1rem;
   }
   .wrapper-joinus {
@@ -576,7 +575,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1rem;
-    grid-auto-rows: minmax(10rem);
+    grid-auto-rows: minmax(10rem, auto);
     padding: 1rem 1rem 1rem 1rem;
   }
   .wrapper-gdpr {
@@ -646,7 +645,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
-    grid-auto-rows: minmax(10rem);
+    grid-auto-rows: minmax(10rem, auto);
     padding: 1rem 1rem 1rem 1rem;
   }
   p {
@@ -674,7 +673,6 @@ textarea {
   footer li {
     display: inline-block;
     margin: auto;
-    padding: auto;
   }
   /* =========================================================
  		pratician1.html
@@ -1034,7 +1032,6 @@ textarea {
   footer li {
     display: inline-block;
     margin: auto;
-    padding: auto;
   }
   /* =========================================================
 		pratician1.html
@@ -1394,7 +1391,6 @@ textarea {
   footer li {
     display: inline-block;
     margin: auto;
-    padding: auto;
   }
   /* =========================================================
 		pratician1.html
