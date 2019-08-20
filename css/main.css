@@ -1719,12 +1719,12 @@ textarea {
   *,
   *:before,
   *:after {
-    background: transparent !important;
-    color: #000 !important;
+    background: transparent ;
+    color: #000 ;
     /* Black prints faster */
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
+    -webkit-box-shadow: none ;
+    box-shadow: none ;
+    text-shadow: none ;
   }
   
   a,
@@ -1750,7 +1750,7 @@ textarea {
   }
   
   pre {
-    white-space: pre-wrap !important;
+    white-space: pre-wrap ;
   }
   
   pre,
