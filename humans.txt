@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    PARENT François -- Developpeur -- @Francois__dev
 
 # THANKS
 
-    <name>
+    YWB, my friends, my family...
 
 # TECHNOLOGY COLOPHON
 
