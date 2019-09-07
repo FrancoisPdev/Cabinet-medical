@@ -274,10 +274,11 @@ textarea {
   * {
     box-sizing: border-box;
   }
+/*
   .wrapper-home {
     max-width: 10vw;
     margin: 1.5rem;
-  }
+  }*/
   .wrapper-home>div {
     border: .1rem solid rgb(233, 171, 88);
     border-radius: .5rem;
@@ -647,7 +648,7 @@ textarea {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: .5rem;
-    grid-auto-rows: minmax(5rem, auto);
+    grid-auto-rows: minmax(10rem, auto);
     padding: 1rem 1rem 1rem 1rem;
   }
   p {
