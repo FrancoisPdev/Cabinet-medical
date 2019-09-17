@@ -992,7 +992,7 @@ textarea {
   }
   .wrapper-home {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
     grid-auto-rows: minmax(10rem, auto);
     max-width: 1661px;
@@ -1353,7 +1353,7 @@ textarea {
   }
   .wrapper-home {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
     grid-auto-rows: minmax(10rem, auto);
   }
