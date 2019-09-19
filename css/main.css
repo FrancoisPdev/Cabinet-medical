@@ -996,7 +996,7 @@ textarea {
     grid-gap: 2rem;
     grid-auto-rows: minmax(10rem, auto);
     max-width: 1661px;
-    margin: 3rem;
+    margin: 10rem;
   }
   p {
     font-family: 'Lato', sans-serif;
@@ -1024,6 +1024,31 @@ textarea {
   footer li {
     display: inline-block;
     margin: auto;
+  }
+/* ======= 
+
+	hover area
+
+   =======*/
+  .one:hover,
+  .two:hover,
+  .three:hover,
+  .four:hover,
+  .five:hover,
+  .six:hover {
+  border-radius: 100%;
+  /**/
+  text-align: center;
+  /**/
+  display: block;
+  /**/
+  background-image: url(../img/stethoscope.png);
+  /**/
+  background-repeat: no-repeat;
+  /**/
+  background-position: center;
+  width:90vw;
+  height:50vh;
   }
   /* =========================================================
 		pratician1.html
