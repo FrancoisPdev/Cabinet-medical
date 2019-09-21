@@ -1,3 +1,10 @@
+/* ==========================================================================
+				@import fonts
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+
 /*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
 
 
@@ -20,9 +27,6 @@
   margin: 0;
   color: #222;
   font-size: 10px;
-	background:url(../img/bg.jpg)no-repeat center fixed; 
-	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
-	background-size: center; /* version standardisée */
 }
   ul{
   padding:0;
@@ -114,6 +118,10 @@ textarea {
    Author's custom styles
 
    ========================================================================== */
+  p, h1, h2 {
+    font-family: 'Lato', sans-serif;
+    color:hsl(84, 37%, 60%);
+  }
 
   header {
   grid-column: 1 / 4;
@@ -126,7 +134,7 @@ textarea {
   }
 
   a:visited {
-  color: blue;
+  color: hsl(0, 0%, 95%);
   }
 
   a {
@@ -156,12 +164,6 @@ textarea {
   list-style-type: none;
   }
 
-
-/* ==========================================================================
-				@import fonts
-   ========================================================================== */
-
-  @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 /* ==========================================================================
    Helper classes
@@ -980,6 +982,11 @@ textarea {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media screen and (min-width: 1068px) and (max-width: 1661px) {
+body{
+	background:url(../img/bg.jpg)no-repeat center fixed; 
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: center; /* version standardisée */
+}
   /* =========================================================
 		A-grid
    ========================================================= */
@@ -989,7 +996,7 @@ textarea {
   .wrapper-home>div {
     border: .1rem solid rgb(233, 171, 88);
     border-radius: .5rem;
-    background-color: hsl(211, 49%, 63%);
+    background-color: hsl(112, 44%, 18%);
     padding: 1rem;
     color: #d9480f;
   }
@@ -1001,13 +1008,10 @@ textarea {
     max-width: 1661px;
     margin: 10rem;
   }
-  p {
-    font-family: 'Lato', sans-serif;
-  }
   header {
     height: auto;
     border: .1rem solid black;
-    background-color: hsl(211, 49%, 63%);
+    background-color: hsl(112, 44%, 18%);
     margin-top:1rem;
   }
   header p {
@@ -1020,7 +1024,7 @@ textarea {
   }
   footer {
     border: .1rem solid black;
-    background-color: hsl(211, 49%, 63%);
+    background-color: hsl(112, 44%, 18%);
   }
   footer p {
     text-align: center;
@@ -1041,22 +1045,28 @@ textarea {
   .four:hover,
   .five:hover,
   .six:hover {
-  border-radius: 100%;
+  border-radius: 1rem;
   /**/
   text-align: center;
   /**/
   display: block;
   /**/
-  background-image: url(../img/stethoscope.png);
+  background-image: url(../img/weed.jpg);
   /**/
   background-repeat: no-repeat;
   /**/
   background-position: center;
   /**/
-  width:90vw;
+  width:45vw;
   /**/
-  height:50vh;
-  }
+  height:60vh;
+ /**/
+ background-color:hsl(51, 22%, 82%);
+ /**/
+ margin-left:20vw;
+ /**/
+ padding-top:20vh;
+}
   /* =========================================================
 		pratician1.html
    ========================================================= */
